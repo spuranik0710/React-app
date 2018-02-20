@@ -1,11 +1,17 @@
 {
-  "name": "React-app",
+  "name": "Reactapp",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "compile": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +23,19 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "express": "^4.16.2",
+    "github-fork-ribbon-css": "^0.2.1",
+    "nodejs-latest": "^1.1.0",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "webpack": "^3.11.0",
     "webpack-dev-middleware": "^2.0.5"
+  },
+  "devDependencies": {
+    "add": "^2.0.6",
+    "create-react-scripts": "^0.1.6",
+    "or": "^0.2.0",
+    "react-scripts": "^1.1.1",
+    "yarn": "^1.3.2"
   }
 }
